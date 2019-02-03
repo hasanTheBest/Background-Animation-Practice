@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animating Background</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .hny {
+            font-size: 4rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: url('fazer_gixxer.jpg') no-repeat center center;
+            -moz-background-clip: text;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: stripe 2000ms linear infinite;
+        }
+
+        @keyframes stripe {
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="hny">Happy New Year 2019</h2>
+    </div>
+</body>
+
+</html>
